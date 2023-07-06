@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/logo-white.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Opera</title>
+  </head>
+  <body onload="handlePreloader()">
+    <!-- Preloader -->
+    <div id="loading">
+      <img src="./images/logo.png" class="mx-auto mb-4 animate-spin" alt="" />
+      <div
+        class="w-[512px] h-2 bg-[#3F3F3F] rounded-[14px] mx-auto overflow-hidden"
+      >
+        <div id="progress" class="bg-[#D9D9D9] h-full"></div>
+      </div>
+    </div>
+
+    <main>
+      <!-- hero -->
+      <section id="hero-bg">
+        <header class="px-8 flex justify-between items-center">
+          <a href="#" class="flex gap-3 items-center">
+            <img id="nav-logo" src="./images/logo.svg" alt="" />
+            <span class="text-lg">/Opera</span>
+          </a>
+          <span class="text-lg hidden md:block">/Opera</span>
+          <div class="flex items-center gap-14">
+            <button id="theme-btn">
+              <img src="images/dark-mode.png" alt="" />
+            </button>
+            <a id="twiter-link" href="http://twitter.com/operaprotocol"
+              ><img src="./images/twiter.svg" alt=""
+            /></a>
+          </div>
+        </header>
+        <div class="flex justify-center mt-20 md:mt-32">
+          <div class="max-w-[700px] px-5">
+            <div class="drop-in">
+              <h1
+                class="text-[28px] sm:text-4xl md:text-[68px] font-semibold leading-[50px] md:leading-[82px] text-center mb-7 focus-in-contract"
+              >
+                GET LIQUID
+                <!-- <img
+                id="top-banner-text"
+                  class="inline" 
+                  src="./images/LIQUID (2).svg"
+                  alt=""
+                /> -->
+
+                WITH OPERA PROTOCOL.
+              </h1>
+              <p class="lg:text-lg font-bold text-center tracking-[0.185em] drop-in-2">
+                THE 1ST DAO GOVERNED <br />
+                REAL-YIELD GENERATING LIQUIDITY BANK FOR <br />
+                DEVELOPERS ON ETHEREUM.
+              </p>
+            </div>
+
+            <div class="flex justify-center gap-16 mt-11">
+              <button
+                class="text-sm font-semibold bg-black text-white px-10 py-1 rounded-full btn-theme"
+              >
+                STAKE
+              </button>
+              <a
+                href="https://opera-protocol.gitbook.io/opera/"
+                target="_blank"
+                class="text-sm font-semibold bg-black text-white px-10 py-1 rounded-full btn-theme"
+              >
+                LEARN
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- dash image -->
+        <div class="flex justify-center mt-16 px-4 lg:px-0">
+          <img src="./images/dash.png" alt="" />
+        </div>
+
+        <div class="bg-black pt-10 md:pt-0">
+          <div
+            class="container mx-auto px-5 lg:flex gap-[106px] items-center justify-between py-[33px]"
+          >
+            <small
+              class="text-lg text-white font-bold tracking-[0.185em] mb-10 lg:mb-0 text-center"
+            >
+              AS FEATURED ON
+        </small>
+
+            <div
+              class="flex gap-16 lg:gap-[106px] items-center justify-center flex-wrap lg:flex-nowrap my-10 lg:my-0"
+            >
+              <img
+                class="flex-1f"
+                src="./images/icons8-medium-new-50 2.svg"
+                alt=""
+              />
+              <img
+                class="flex-1f"
+                src="./images/icons8-new-york-times-50 1.svg"
+                alt=""
+              />
+              <img
+                class="flex-1f"
+                src="./images/icons8-github-50 1.svg"
+                alt=""
+              />
+              <img class="flex-1f" src="./images/image 4.svg" alt="" />
+              <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x5ad516c3fefffce5b108479c3fc50228e5da47d4"><img class="flex-1f" src="./images/image 5.svg" alt="" /></a>
+            </div>
+
+            <small
+              class="text-lg text-white font-bold tracking-[0.185em] mt-10 lg:mt-0 text-center"
+            >
+              + MANY MORE
+          </small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Protocol -->
+      <section id="protocol">
+        <div
+          class="container mx-auto px-5 lg:px-20 md:flex flex-row-reverse justify-between items-center pt-20 md:pb-28"
+        >
+          <div class="md:mt-32">
+            <img
+              id="protocol-logo"
+              src="./images/O_btp.png"
+              class="w-[450px]"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h2 class="text-[26px] font-bold leading-[62px]f sm:hidden" data-aos="fade-up"
+     data-aos-duration="3000">
+              What is OPERA PROTOCOL?
+            </h2>
+            <h2 class="text-5xl font-bold leading-[62px] hidden sm:block" data-aos="fade-up"
+     data-aos-duration="3000">
+              What is <br />
+              OPERA PROTOCOL?
+            </h2>
+            <div class="space-y-5 mt-6" data-aos="fade-up"
+     data-aos-duration="3000">
+              <p class="text-xls tracking-wider max-w-[400px]">
+                <b>OPERA</b> works by allowing developers, builders, and degens
+                to “get liquid” and <b>fund their LPs</b>
+                (Liquidity Pools) with ETH,
+                <b>without having to ask anyone or wait for anything.</b>
+              </p>
+
+              <p class="text-xls tracking-wider max-w-[450px]">
+                <b>$OPERA</b> holders can choose to stake their tokens with the
+                DAO to provide liquidity to new tokens, and earn a passive % of
+                trading fees <b>virtually risk free.</b>
+              </p>
+
+              <p class="text-xls tracking-wider max-w-[480px]">
+                Developers can then <b>borrow some ETH</b> from the DAO to
+                launch their tokens in a <b>100% safe and seamless way.</b>
+              </p>
+
+              <p class="text-xls tracking-wider max-w-[565px]">
+                ”<b>Miners” (DAO members)</b> can view our dashboard and see all
+                tokens utilizing <b>Opera Liquidity</b>. They vote to return the
+                capital to the pool
+                <b>if the borrowed capital is being used inefficiently. </b>
+              </p>
+            </div>
+
+            <div class="mt-11 space-x-4">
+              <a
+                href="https://opera-protocol.gitbook.io/opera/"
+                class="text-sm font-semibold bg-black text-white px-6 my-[5px] rounded-full uppercase btn-theme"
+              >
+                whitepaper
+              </a>
+              <button
+                class="text-sm font-semibold text-black border border-black px-6 my-[5px] rounded-full btn-theme"
+              >
+                JOIN DAO
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- why -->
+      <section
+        id="why-section"
+        class="mx-auto lg:mx-0 pl-5 md:px-0 flex items-center mt-14 md:mt-0 border-t-2"
+      >
+        <div class="hidden lg:block">
+          <img id="img-whySection" src="./images/parttern.svg" alt="" />
+        </div>
+
+        <div class="border-l-2 pl-5 pr-2 lg:pr-0 lg:pl-[90px] py-[50px]">
+          <h2 class="text-5xl font-bold leading-[62px]" data-aos="fade-up"
+     data-aos-duration="3000">Why use Opera?</h2>
+          <div class="space-y-5 mt-6">
+            <p class="text-xls tracking-wider max-w-[580px]" data-aos="fade-up"
+     data-aos-duration="3000">
+              <b>The OPERA Protocol itself</b> primarily serves 3 groups of
+              people. Borrowers that want to launch tokens without the hassle of
+              providing and locking personal funds for liquidity, and the
+              lenders which want to lend their tokens to those borrowers to be
+              used as liquidity. There are also people that just want to
+              participate in the ecosystem, (via holding and staking, voting,
+              etc.) and be a part of something that is helping hundreds of
+              developers get liquid every single day. <br /><br />
+              Anyone can participate on any side, supply or demand. Or even all
+              three sides at once! The opportunities are vast and will grow as
+              the network & ecosystem expands. The protocol ties everything
+              together in a decentralized way, ensuring that there is
+              distributed ownership of the project in every possible way.
+
+              <br /><br />
+
+              <b>$OPERA</b> is our governance + reward token that is distributed
+              via token emissions to lenders and stakers. It will exist on
+              multiple chains. Though it is not an investment vehicle, nor does
+              it represent/act as a “share”, it is a free market and subject to
+              volatility and risk. There are also several utilities the token
+              will have at launch as well as in the future. <br /><br />
+              We invite you to join us!
+            </p>
+          </div>
+
+          <div class="mt-11 md:space-x-4 flex flex-col md:flex-row items-start ">
+            <button
+              class="text-sm font-semibold bg-black text-white px-6 my-[5px] rounded-full uppercase btn-theme"
+            >
+              try opera
+            </button>
+            <a
+              href="http://t.me/operaprotocol"
+              class="text-sm font-semibold text-black border border-black px-6 my-[5px] rounded-full uppercase btn-theme"
+            >
+              join Community
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIVE NOW! -->
+      <section>
+        <div id="launching-border" class="py-5 border-y-2 overflow-hidden">
+          <div>
+            <div class="flex justify-between items-center gap-5 lg:gap-[96px]">
+              <p>LIVE NOW!</p>
+              <img class="star-icon" src="images/Star-dark.png" alt="" />
+              <p>LIVE NOW!</p>
+              <img class="star-icon" src="images/Star-dark.png" alt="" />
+              <p>LIVE NOW!</p>
+              <img class="star-icon" src="images/Star-dark.png" alt="" />
+              <p>LIVE NOW!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-16 flex flex-col lg:flex-row items-start lg:items-end justify-between mt-[150px] mb-14">
+          <div>
+            <p class="text-xl">OPERA PROTOCOL</p>
+            <p class="text-[32px] lg:text-[42px] font-bold mb-5 lg:mb-0">
+              Be part of the next frontier<br />in web3 liquidity aggregation +
+              niche lending.
+            </p>
+          </div>
+
+          <div>
+            <a
+              href="http://t.me/operaprotocol"
+              class="text-sm font-semibold text-black border border-black px-6 my-[5px] rounded-full uppercase btn-theme"
+            >
+              join Community
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+
+      <!-- <section class="container max-w-[90%] mx-auto px-5 md:px-0 mt-20 md:mt-0">
+        <h2 class="text-5xl font-bold leading-[62px]">HOW to BUY</h2>
+        <div class="space-y-10 mt-14">
+          <div
+            class="md:flex flex-row-reverse items-center gap-5 border border-black p-5 rounded-xl"
+          >
+            <img class="w-[100px]" src="./images/MetaMask.png" alt="" />
+            <div>
+              <h2 class="text-3xl font-bold leading-[62px]">Create A Wallet</h2>
+              <p>
+                You can download a metamask wallet or any other type of your
+                choice from the app store or google play store for free. Desktop
+                users, download the google chrome extension by going to
+                metamask.io or again any other wallet of your choice.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="md:flex items-center gap-5 border border-black p-5 rounded-xl"
+          >
+            <img class="w-[80px]" src="./images/eth.png" alt="" />
+            <div>
+              <h2 class="text-3xl font-bold leading-[62px]">Get Some ETH</h2>
+              <p>
+                Now get Some ETH by buying them or swapping stablecoin into eth
+                to be able to switch to $OPERA. If you don't have any ETH, you
+                can buy directly on metamask, transfer from another wallet, buy
+                on another exchange or ask to a friend to send you some and send
+                it to your wallet.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="md:flex flex-row-reverse items-center gap-5 border border-black p-5 rounded-xl"
+          >
+            <img class="w-[100px]" src="./images/uniswap.webp" alt="" />
+            <div>
+              <h2 class="text-3xl font-bold leading-[40px] mb-3">
+                Now go connect your wallet to Uniswap.
+              </h2>
+              <p>
+                Go to app.uniswap.org in google chrome or on the browser inside
+                your Metamask app. Connect your wallet. Paste the $OPERA token
+                address into Uniswap, select Opera, and confirm. When Metamask
+                prompts you for a wallet signature, you can sign, but always
+                double check.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="md:flex items-center gap-5 border border-black p-5 rounded-xl"
+          >
+            <img
+              id="service-logo"
+              class="w-[100px]"
+              src="./images/logo.svg"
+              alt=""
+            />
+            <div>
+              <h2 class="text-3xl font-bold leading-[62px]">
+                Swap your ETH for $OPERA
+              </h2>
+              <p>
+                Now swap your ETH for OPERA. We have a 6% tax on buys and sells,
+                so set your slippage in Uniswap to 6-8%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- bottom section -->
+
+      <!-- <section class="px-5 mt-16 md:mt-36">
+        <p
+          class="text-[15px] font-bold text-center tracking-wider leading-[138%]"
+        >
+          There is no formal/public-facing roadmap due to the scope of our
+          project. <br />
+          <br />
+          This means that we like to keep everyone on their toes, expecting the
+          unexpected.<br />
+          <br />With that being said, you can find out more about what we intend
+          to build for the project on our Gitbook.<br />
+          <br />There you will also find our tokenomics structure and a details
+          on all $OPERA allocations.
+        </p>
+      </section> -->
+
+      <!-- <section class="container mx-auto flex justify-center my-20">
+        <img src="./images/ezgif.com-video-to-gif.gif" alt="" />
+      </section> -->
+    </main>
+
+    <!-- footer -->
+
+    <footer class="bg-black">
+      <div class="flex flex-wrap py-10 mx-auto px-16">
+        <div class="lg:w-1/2">
+          <div class="max-w-[425px]">
+            <img src="./images/logo-white.svg" alt="" />
+            <h5
+              class="text-xl font-bold leading-[120%] tracking-wider text-white"
+            >
+              Opera Protocol, establishing the niche lending sphere of web3.
+            </h5>
+            <small
+              class="text-sm leading-[120%] tracking-wider text-white mt-3"
+            >
+              © 2023 All Rights Reserved.
+            </small>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-12 justify-between lg:w-1/2 mt-10 lg:mt-0">
+          <ul class="text-[11px] font-bold text-white space-y-6 mt-10 md:mt-0">
+            <li>About</li>
+            <li>DAO</li>
+            <li>Risk Disclaimer</li>
+            <li>
+              <a href="https://opera-protocol.gitbook.io/opera/" target="_blank"
+                >Whitepaper</a
+              >
+            </li>
+          </ul>
+
+          <ul class="text-[11px] font-bold text-white space-y-6 mt-10 md:mt-0">
+            <li>Launch your Token</li>
+            <li>Lend ETH</li>
+            <li>Staking</li>
+            <li>Community</li>
+          </ul>
+
+          <div class="mt-10 md:mt-0 shrink-0">
+            <form>
+              <div class="mb-6">
+                <label
+                  for="email"
+                  class="block mb-2 text-[11px] font-medium text-white"
+                  >Join our Newsletter to stay up to date!</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Email Address"
+                />
+                <p class="text-[#c1c1c1] text-[7px] font-bold tracking-wider">
+                  We’ll never spam, ever. <code><3</code>
+                </p>
+                <p class="text-[#c1c1c1] text-[7px] font-bold tracking-wider">
+                  You can always unsubscribe.
+                </p>
+              </div>
+            </form>
+            <div class="flex gap-7 justify-end">
+              <a href="http://twitter.com/operaprotocol">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect width="17" height="17" fill="url(#pattern0)" />
+                  <defs>
+                    <pattern
+                      id="pattern0"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_104_277"
+                        transform="scale(0.015625)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_104_277"
+                      width="64"
+                      height="64"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEt0lEQVR4nO2ba4hVVRSAvz3IMIhEiEjIFCaDzA+RFJEeg4iFRfRHCAShsKyI6EFGBWGCCAXZAyEK8pFk/QopsYQECaPSiizpQWJmWImUTmElas18/dhn7HbnnnPPvXPPmVvdDy6Xmb3P3mutsx9r77UudOjQoUOH/y9hvAXIQp0IXA9cC8wGLgS6gDPAj8DnwHbgnRDCn+MlZ8tRJ6lr1JPm44h6lzohR9uT1VVqX1qF2gUloS5Sv8upeDWfqP0p7far69Vf1b1pnU9NKiwvUsk0krf4R5PKj/Czujhpb4Z6t/peVZ2FaQI8lFQYUm8tWfk7k35bwZDp02drlhB7qxq5oyTlBxz7m8/DR+qkNCF61LNVDwypKwtWvkc9WILyB9QpFf32qcsqBenPePgpc6ywTRrg3hKU3632qgvUterHxhG3qFKQK+s08qY6ucXKd6mHC1R8hCOOHt0rq4UZyNnQghYaoJ7Ri2LdiAxdFfL8kkPm6cDbxv30ghbYYGEL2miUZ4GHR/1XnWhj29AP6m2OYW1QN7T83WbzeD2BDjTR6EF1udrThAFebal66fyu3lxLhq6qv99oVAlgJvAicNjov1/SwLMNG61JdoUQXqpVUG2ATcBwk51MA1YTDbHHuL31qdV9VHKuyb4a5XRawT+ECyF8A7w8xs4mAAuA9cAh4JC6NTHIQuN+3J3UPT7GvvLyW1rBqPsA9SLgADC1QIFOA4NAd8H9jPB0COGBWgWjhmcI4ThwE8UOz4lAL+UoD3AyreC8AdS56nyAEMIu4BbKm6NFkzrVKkdAP/CB8cS0CjgGrABOFSxcGRxNK6h0Yo4l3/OSzwjN7grtxNdpBZUj4Kscdf6NnAK+Tys8r1yy+H1ahkQlsz/rxrj67W4oWJjx4N2swmoDbOHvteC/wu6swmpP8DTwaKHilMsg8H5WhVoL3BZgVxHSjAM7QwiZvkwtT3AYWArsL0qqEnmlXoXU2KDx/m8b43Nr0wqOAxfXixmm7vEhhEFiUPIx/p0u8cY8AdNc0WFjvO1+YBlQO7DQXpwDLg0h1N3RMg2gziW6y8PJdy9wD/G8385sDCHcnqdivQvNG4A1Y5enVM4B2ZefFdTz818g4zalTXkuudnKRaYBkvPBuqw6bcYJYG0jD+Q56T0BfNiUOOVzX7J75SbvLtAL7AFmNCNVSbweQljS6EO5k6TU6cAOYFajnZTAUWBOo28fGrjsCCF8C1wFbKa9bonOAEubUb5p1Pnqa5aT1ZHFkJVJDk0wpjxBYwxhMXAFcWpcRrme4oMhhCdL7K82arcx86I6CaFI2sNBMyZWfFai4qqPjLfeqLOM4e1Wpbbl4awlp+9VK92j3qi+VbLiGhMyWn4Iq3canECMGA0AVxMXvFakxjTKTmBF4pq3lKAOEI+4IyfDbmLwcgrR8xvP8/8gMZ9nc3JVVwzqbHVHyUM6i7Pq82pZ0ePzhpinbrP8+V2p+CZ1ZqmK1zBEn/qM+lNJih9RV6vTyta13iLYDVwDLAGuI16JtYJh4Evi4rYd2FfoHM+gIVfY+GOKy4E5xN1hBjE5Km1nGCYuZEeJIeoviPGGfSGEE03K3KFDhw4dOrSIvwCPQ6qZnKB1LgAAAABJRU5ErkJggg=="
+                    />
+                  </defs>
+                </svg>
+              </a>
+
+              <a href="http://t.me/operaprotocol"
+                ><img src="./images/telegram.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@500;700&display=swap");
+
+* {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+}
+
+#loading {
+  position: fixed;
+  background: url('images/bg.png')  no-repeat center center/cover, url("images/dark-bg.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#progress {
+  animation: progressPercent 6s infinite alternate ease-in;
+  border-radius: 14px; 
+}
+
+@keyframes progressPercent {
+  0% {
+    width: 0%;
+    /* margin-left: -20%; */
+  }
+  100% {
+    width: 100%;
+    /* margin-left: 70%; */
+  }
+}
+
+h1,
+button {
+  font-family: "Inter", sans-serif !important;
+}
+
+#hero-bg {
+  background: url(./images/bg.svg) no-repeat center center/cover;
+}
+
+.bg-pattern {
+  background-image: url(./images/parttern.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+  animation-delay: 4s;
+}
+
+.drop-in-2 {
+  animation: drop-in 1200ms ease 500ms backwards;
+  animation-delay: 4s;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
